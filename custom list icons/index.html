@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta city="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anmol Bhatt">
+    <title>Custom List Icons</title>
+    <style>
+        .city-list {
+        list-style: none;
+        }
+
+        .city-list li {
+        font-size: 2em;
+        }
+
+        .city-list li::before {
+        content: "😎";
+        margin-right: 15px;
+        font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="city-list">
+          <li>Berlin</li>
+          <li>Los Angeles</li>
+          <li>Venice</li>
+          <li>Paris</li>
+          <li>Prague</li>
+          <li>Amsterdam</li>
+          <li>Sydney</li>
+        </ul>
+    </div>
+</body>
+</html>
